@@ -1,9 +1,6 @@
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import UserLayout from './UserLayout'
 import SimpleLayout from './SimpleLayout'
-// import HomePage from './Pages/User/Home'
-// import AppList from './Pages/User/AppList'
-// import Dashboard from './Pages/User/Dashboard'
 import { useAuth } from '../Hooks/useAuth'
 import Home from '../Pages/Home'
 import LoginPage from '../Pages/Login'
@@ -12,17 +9,6 @@ import AppList from '../Pages/User/AppList'
 import AppDashboard from '../Pages/User/AppDashboard'
 import AddApp from '../Pages/User/AddApp'
 import ReportBug from '../Pages/User/ReportBug'
- 
-// const router = createBrowserRouter(
-//     createRoutesFromElements(
-//         <Route path="/" element={<RootLayout />} >
-//             <Route index element={<HomePage />} />
-//             <Route path="/apps" element={<AppList />} />
-//             <Route path="/app/:id" element={<Dashboard />} />
-//             <Route path="*" element={<NoPage />} />
-//         </Route>
-//     )
-// )
 
 const router = createBrowserRouter(
     createRoutesFromElements(
