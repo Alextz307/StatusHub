@@ -41,3 +41,46 @@ StatusHub was developed during the [iTEC](https://itec.ro/) hackathon by a team 
 - **APIs**: 
   - OpenAI API
   - Twilio API
+ 
+# Installation and Running the Application
+
+## Prerequisites
+
+- **Node.js** and **npm** for the client side.
+- **Python 3.x** and **pip** for the server side.
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Alextz307/StatusHub.git
+   cd StatusHub
+   ```
+
+2. **Install client dependencies**
+   ```bash
+   cd client
+   npm install
+   ```
+
+3. **Install server dependencies**
+   ```bash
+   cd ../server
+   pip install -r requirements.txt
+   ```
+
+## Running the Application
+
+1. **Start the server**
+   ```bash
+   cd server
+   flask run
+   ```
+
+2. **Start the client**
+   ```bash
+   cd ../client
+   npm run dev
+   ```
+
+3. **Access the application via the URL provided in the terminal output (probably http://localhost:5173)**
