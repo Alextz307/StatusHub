@@ -2,16 +2,15 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD6aY9bu6CHcMgmydOTRt6tr84SlYs3sDY",
-  authDomain: "itecmonitor.firebaseapp.com",
-  projectId: "itecmonitor",
-  storageBucket: "itecmonitor.appspot.com",
-  messagingSenderId: "297530121117",
-  appId: "1:297530121117:web:89275e38fdd28d5e9b6d74",
-  measurementId: "G-KZ13GT4FCW"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
-// const analytics = getAnalytics(app);
