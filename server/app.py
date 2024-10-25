@@ -23,8 +23,6 @@ app.register_blueprint(bug_bp)
 app.register_blueprint(app_to_user_bp)
 app.register_blueprint(endpoint_status_bp)
 
-# init_db()
-
 scheduler = BackgroundScheduler()
 
 for _app in db_session.query(App).all():
